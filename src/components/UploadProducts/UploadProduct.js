@@ -13,7 +13,7 @@ const UploadProduct = () => {
         const price = e.target.price.value;
         const quantity = e.target.quantity.value;
 
-        const url = `http://localhost:5000/uploadProduct`;
+        const url = `https://evening-coast-18476.herokuapp.com/uploadProduct`;
         fetch(url, {
             method: 'POST',
             body: JSON.stringify({

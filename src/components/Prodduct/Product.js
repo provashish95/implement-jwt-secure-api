@@ -10,7 +10,7 @@ const Product = ({ product }) => {
     const handleOrder = product => {
         const { productName, price, quantity } = product;
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://evening-coast-18476.herokuapp.com/addOrder', {
             method: 'POST',
             body: JSON.stringify({
                 productName,

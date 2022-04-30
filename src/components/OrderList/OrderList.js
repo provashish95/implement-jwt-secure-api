@@ -9,7 +9,7 @@ const OrderList = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/orderList`;
+        const url = `https://evening-coast-18476.herokuapp.com/orderList`;
         fetch(url, {
             headers: {
                 'authorization': `${user.email} ${localStorage.getItem("accessToken")}`,
